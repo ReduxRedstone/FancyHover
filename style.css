@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+* .fancyhover {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; 
+  display: inline-block;
+  white-space: nowrap;
+}
+
+
+html {
+  font: 112.5%/1.444444444 "Runda", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #47525d;
+}
+
+.fancyhover.fancyhover-top:after {
+  content: attr(hovertext);
+  bottom: 100%;
+  left: 50%;
+  padding: 0.3611rem 0.7222rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%) rotate(3deg);
+  width: auto;
+  z-index: 2;
+  font: 83.333%/1.5333 "Source Code Pro", Monaco, monospace;
+  background-color: rgba(71, 82, 93, 0.8);
+  border-radius: .25em;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.905, -0.25, 0.52, 1.41);
+  pointer-events: none; 
+}
+.fancyhover.fancyhover-top:hover:after {
+  margin-bottom: 0.7222rem;
+  opacity: 1;
+  -webkit-transform: translateX(-50%); 
+}
+.fancyhover.fancyhover-top:before {
+  content: '';
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: -1.4444rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%) rotate(3deg);
+  z-index: 2;
+  border: 0.7222rem solid transparent;
+  border-top-color: rgba(71, 82, 93, 0.8);
+  opacity: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.905, -0.25, 0.52, 1.41);
+}
+.fancyhover.fancyhover-top:hover:before {
+  margin-bottom: -0.7222rem;
+  opacity: 1;
+  -webkit-transform: translateX(-50%); 
+}
+
+
+.fancyhover.fancyhover-bottom:after {
+  content: attr(hovertext);
+  top: 100%;
+  left: 50%;
+  padding: 0.3611rem 0.7222rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%) rotate(3deg);
+  width: auto;
+  z-index: 2;
+  font: 83.333%/1.5333 "Source Code Pro", Monaco, monospace;
+  background-color: rgba(71, 82, 93, 0.8);
+  border-radius: .25em;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.905, -0.25, 0.52, 1.41);
+  pointer-events: none; 
+}
+.fancyhover.fancyhover-bottom:hover:after {
+  margin-top: 0.7222rem;
+  opacity: 1;
+  -webkit-transform: translateX(-50%); 
+}
+.fancyhover.fancyhover-bottom:before {
+  content: '';
+  top: 100%;
+  left: 50%;
+  margin-top: -1.4444rem;
+  position: absolute;
+  -webkit-transform: translateX(-50%) rotate(3deg);
+  z-index: 2;
+  border: 0.7222rem solid transparent;
+  border-bottom-color: rgba(71, 82, 93, 0.8);
+  opacity: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.905, -0.25, 0.52, 1.41);
+}
+.fancyhover.fancyhover-bottom:hover:before {
+  margin-top: -0.7222rem;
+  opacity: 1;
+  -webkit-transform: translateX(-50%); 
+}
