@@ -1,0 +1,6 @@
+{
+  "name": "Fancyhover",
+  "tagline": "CSS hover events based on the hover events found on http://daneden.github.io/Toast/",
+  "body": "<html>\r\n  <head>\r\n    <meta charset=\"utf-8\">\r\n    <meta name=\"viewport\" content=\"initial-scale=1\">\r\n    <link rel=\"stylesheet\" href=\"style.css\">\r\n    <link href=\"//fonts.googleapis.com/css?family=Source+Code+Pro:400,600\" rel=\"stylesheet\" type=\"text/css\">\r\n  </head>\r\n<body>\r\n  <br><br><br><br><br><br><br>\r\n  <center>\r\n    <p class=\"fancyhover fancyhover-top\" hovertext=\"This is an example of some fancy hover text\">Fancy hover text top</p><br>\r\n    <p class=\"fancyhover fancyhover-bottom\" hovertext=\"This is an example of some fancy hover text\">Fancy hover text bottom</p><br>\r\n  </center>\r\n</body>\r\n</html>",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
